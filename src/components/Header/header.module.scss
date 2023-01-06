@@ -1,0 +1,54 @@
+@import '../../utilities/variables.scss';
+
+.header {
+    max-width: 22.25rem;
+    height: 100vh;
+    padding: 2.5rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+
+    background-color: $blue-main;
+
+    .header__username, 
+    .header__module-name {
+        color: #fff;
+        font-weight: 400;
+    }
+
+    .header__profile {
+        width: 18.56rem;
+        height: auto;
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 1.5rem;
+
+        .header__username {
+            font-size: 1.3rem;
+        }
+    }
+
+    .header__modules {
+        ul {
+            li {
+                cursor: pointer;
+
+                .header__module-name {
+                    font-size: 1.2rem;
+
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    gap: 1.5rem;
+
+                    &::before {
+                        content: url("../../../public/img/header/debts_module_icon.svg");                        
+                    }
+                }
+            }
+        }
+    }
+}

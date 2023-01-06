@@ -5,7 +5,10 @@
 ? Мониторы — 1280 пикселей, 1600, 1920 и выше.
 */
 
-@import 'nullstyle';
+@import './utilities/nullstyle.scss';
 @import './components/Header/header.module.scss';
 
-$blue-main: #2F76E6;
+* {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px; 
+}
