@@ -1,0 +1,22 @@
+.debts-grid {
+    width: 100%;
+    padding: 40px 120px;
+
+    .debts-grid__user-block {
+        padding-left: 28px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 1rem;
+
+        .debts-grid__user-greetings {
+            font-size: 2.625rem;
+            font-weight: 500;
+        }
+
+        .debts-grid__datetime {
+            font-size: 2rem;
+        }
+    }
+}
