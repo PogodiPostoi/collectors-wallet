@@ -1,0 +1,53 @@
+@import '../../utilities/variables.scss';
+
+.multifilters {
+    padding: 24px 0;
+
+    .multifilters__title {
+        padding-left: 28px;
+        padding-bottom: 22px;
+
+        font-size: 1.25rem;
+        font-weight: 500;
+    }
+
+    .multifilters__container {
+        padding: 28px 32px;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: $box-shadow;
+
+        .multifilters__filters-container {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 3.875rem;
+
+            .multifilters__filter-block {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                gap: 0.2rem;
+            }
+    
+            .multifilters__filter-name {
+                font-weight: 500;
+            }
+    
+            .multifilters__input {
+                width: 200px;
+                height: 35px;
+                padding: .3rem;
+                margin-top: 8px;
+    
+                border: 1px solid $lightgrey-border;
+            }
+        }
+    }
+}

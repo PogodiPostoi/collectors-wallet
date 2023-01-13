@@ -1,11 +1,11 @@
 import Header from "./components/Header"
-import Debts_grid from './pages/Debts_grid'
+import DebtsGrid from './pages/DebtsGrid'
 
 function App() {
   return (
     <div className="App">
       <Header/>
-      <Debts_grid/>
+      <DebtsGrid/>
     </div>
   );
 }
