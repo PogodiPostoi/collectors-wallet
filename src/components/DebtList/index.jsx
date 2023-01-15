@@ -2,12 +2,13 @@ import './debtList.module.scss';
 
 const DebtList = () => {
     return (
-        <div className="debt-list">
-            <div className="debt-list__title">
+        <div className="bg-block">
+            <div className="bg-block__title">
                 Список долгов
             </div>
-            <div className="debt-list__container">
+            <div className="bg-block__container">
                 <p>table</p>
+                {/*TODO: Добавить либу react-table (вроде так)*/}
             </div>
         </div>
     )

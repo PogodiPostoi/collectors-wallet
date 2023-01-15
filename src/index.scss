@@ -39,3 +39,30 @@ body {
 
     background-image: url('../public/img/buttons/reset.svg');
 }
+
+/* bg-block */
+
+.bg-block {
+    padding: 18px 0;
+
+    .bg-block__title {
+        padding-left: 28px;
+        padding-bottom: 18px;
+
+        font-size: 1.25rem;
+        font-weight: 500;
+    }
+
+    .bg-block__container {
+        padding: 24px 32px;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: $box-shadow;
+    }
+}

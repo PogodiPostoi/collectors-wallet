@@ -2,11 +2,11 @@ import './multifilters.module.scss';
 
 const Multifilters = () => {
     return (
-        <div className="multifilters">
-            <h3 className="multifilters__title">
+        <div className="bg-block">
+            <h3 className="bg-block__title">
                 Быстрая фильтрация
             </h3>
-            <div className="multifilters__container">
+            <div className="bg-block__container">
                 <div className="multifilters__filters-container">
                     <div className="multifilters__filter-block">
                         <span className="multifilters__filter-name">Тип должника</span>
