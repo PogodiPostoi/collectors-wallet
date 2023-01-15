@@ -1,18 +1,18 @@
 @import '../../utilities/variables.scss';
 
 .multifilters {
-    padding: 24px 0;
+    padding: 18px 0;
 
     .multifilters__title {
         padding-left: 28px;
-        padding-bottom: 22px;
+        padding-bottom: 18px;
 
         font-size: 1.25rem;
         font-weight: 500;
     }
 
     .multifilters__container {
-        padding: 28px 32px;
+        padding: 24px 32px;
 
         display: flex;
         flex-direction: row;
