@@ -1,1 +1,42 @@
 @import '../../utilities/variables.scss';
+
+.debt-card-tabs {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+
+    .debt-card-tabs__flex {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    
+    .debt-card-tabs__tabs-container {
+        display: flex;
+        flex-direction: row;
+    
+        .debt-card-tabs__tab-container {
+            width: auto;
+            min-width: 60px;
+        
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: .5rem;
+        
+            border-bottom: 2px solid $lightgrey-border;
+            
+            .debt-card-tabs__tab-title {
+                height: 25px;
+                padding: 0 10px;
+                
+                text-align: center;
+            }
+        
+            &:hover {
+                border-bottom: 2px solid $blue-main;
+            }
+            
+        }
+    }
+}

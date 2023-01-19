@@ -13,21 +13,21 @@ const DebtCardHeader = () => {
                     </div>
                 </div>
                 <div className="debt-card-header__debt-info">
-                    <div className="debt-card-header__debt-info-field-container" style={{width: 100}}>
-                        <label className="debt-card-header__label" htmlFor="debtId">ID</label>
-                        <input className="debt-card-header__input" type="number" id="debtId" name="debtId" disabled/>
+                    <div className="fields__field-container" style={{width: 100}}>
+                        <label className="fields__label" htmlFor="debtId">ID</label>
+                        <input className="fields__input" type="number" id="debtId" name="debtId" disabled/>
                     </div>
-                    <div className="debt-card-header__debt-info-field-container" style={{width: 250}}>
-                        <label className="debt-card-header__label" htmlFor="FIO">ФИО</label>
-                        <input className="debt-card-header__input" type="text" id="FIO" name="FIO"/>
+                    <div className="fields__field-container" style={{width: 250}}>
+                        <label className="fields__label" htmlFor="FIO">ФИО</label>
+                        <input className="fields__input" type="text" id="FIO" name="FIO"/>
                     </div>
-                    <div className="debt-card-header__debt-info-field-container" style={{width: 100}}>
-                        <label className="debt-card-header__label" htmlFor="personType">Тип</label>
-                        <input className="debt-card-header__input" type="text" id="personType" name="personType"/> {/*TODO: Переделать на выпадающий список  */}
+                    <div className="fields__field-container" style={{width: 100}}>
+                        <label className="fields__label" htmlFor="personType">Тип</label>
+                        <input className="fields__input" type="text" id="personType" name="personType"/> {/*TODO: Переделать на выпадающий список  */}
                     </div>
-                    <div className="debt-card-header__debt-info-field-container" style={{width: 250}}>
-                        <label className="debt-card-header__label" htmlFor="user">Ответственный</label>
-                        <input className="debt-card-header__input" type="text" id="user" name="user"/>
+                    <div className="fields__field-container" style={{width: 250}}>
+                        <label className="fields__label" htmlFor="user">Ответственный</label>
+                        <input className="fields__input" type="text" id="user" name="user"/>
                     </div>
                 </div>
             </div>

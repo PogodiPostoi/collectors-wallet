@@ -11,6 +11,7 @@
 @import './components/DebtList/debtList.module.scss';
 @import './components/DebtCardHeader/debtCardHeader.module.scss';
 @import './components/DebtCardTabs/debtCardTabs.module.scss';
+@import './components/DebtCardTabClient/debtCardTabClient.module.scss';
 @import './pages/DebtsGrid/debtsGrid.module.scss';
 @import './pages/DebtCard/debtCard.module.scss';
 
@@ -72,6 +73,32 @@ body {
         box-shadow: $box-shadow;
     }
 
+}
+
+/* fields */
+
+.fields__field-container {
+    display: flex;
+    flex-direction: column;
+
+    position: relative;        
+}
+
+.fields__label {
+    color: $label-text;
+    font-size: .875rem;
+}
+
+.fields__input {
+    padding: 5px 3px 0;
+    border-bottom: 2px solid $lightgrey-border;
+
+}
+
+.fields__input:focus {
+    background-color: $focus-bgcolor;
+    border-bottom: 2px solid $blue-main;
+    //*TODO: Сделать окрас на input и label. Чтобы оба подсвечивались
 }
 
 /* etc */
