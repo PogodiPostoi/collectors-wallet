@@ -1,0 +1,57 @@
+@import '../../utilities/variables.scss';
+
+.debt-card-header__flex {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+}
+
+.debt-card-header__other-debt-container {
+    width: auto;
+    min-width: 200px;
+
+    display: flex;
+    flex-direction: row;
+    gap: .5rem;
+
+    border-bottom: 2px solid $lightgrey-border;
+    
+    .debt-card-header__other-debt-title {
+        height: 25px;
+    }
+
+    &:hover {
+        border-bottom: 2px solid $blue-main;
+    }
+}
+
+.debt-card-header__debt-info {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem; 
+
+    .debt-card-header__debt-info-field-container {
+        display: flex;
+        flex-direction: column;
+
+        position: relative;        
+
+        .debt-card-header__label {
+            color: $label-text;
+            font-size: .875rem;
+        }
+
+        .debt-card-header__input {
+            padding: 5px 3px 0;
+            border-bottom: 2px solid $lightgrey-border;
+
+        }
+
+        .debt-card-header__input:focus {
+            background-color: $focus-bgcolor;
+            border-bottom: 2px solid $blue-main;
+            //*TODO: Сделать окрас на input и label. Чтобы оба подсвечивались
+        }
+    }
+}

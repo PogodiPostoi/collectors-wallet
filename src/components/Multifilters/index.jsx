@@ -6,7 +6,7 @@ const Multifilters = () => {
             <h3 className="bg-block__title">
                 Быстрая фильтрация
             </h3>
-            <div className="bg-block__container">
+            <div className="bg-block__container multifilters__flex">
                 <div className="multifilters__filters-container">
                     <div className="multifilters__filter-block">
                         <span className="multifilters__filter-name">Тип должника</span>

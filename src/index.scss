@@ -9,7 +9,9 @@
 @import './components/Header/header.module.scss';
 @import './components/Multifilters/multifilters.module.scss';
 @import './components/DebtList/debtList.module.scss';
+@import './components/DebtCardHeader/debtCardHeader.module.scss';
 @import './pages/DebtsGrid/debtsGrid.module.scss';
+@import './pages/DebtCard/debtCard.module.scss';
 
 * {
     font-family: 'Roboto', sans-serif;
@@ -27,6 +29,7 @@ body {
 }
 
 /* Кнопки */
+
 .btn {
     content: '';
     background-color: inherit;
@@ -38,6 +41,13 @@ body {
     height: 24px;
 
     background-image: url('../public/img/buttons/reset.svg');
+}
+
+.btn--close {
+    width: 12px;
+    height: 12px;
+
+    background-image: url('../public/img/buttons/close.svg');
 }
 
 /* bg-block */
@@ -55,14 +65,20 @@ body {
 
     .bg-block__container {
         padding: 24px 32px;
-
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-
+     
         background-color: #fff;
         border-radius: 8px;
         box-shadow: $box-shadow;
     }
+
+}
+
+/* etc */
+
+.w-100p {
+    width: 100%;
+}
+
+.fd-column {
+    flex-direction: column;
 }
