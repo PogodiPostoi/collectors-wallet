@@ -127,6 +127,12 @@ body {
     //*TODO: Сделать окрас на input и label. Чтобы оба подсвечивались
 }
 
+/* react-tabs */
+
+.react-tabs__tab--selected {
+    border-bottom: 2px solid $blue-main;
+}
+
 /* etc */
 
 .w-100p {

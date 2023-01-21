@@ -1,13 +1,19 @@
+import React from 'react';
+import { Route, Routes } from "react-router-dom";
+
 import Header from "./components/Header"
-// import DebtsGrid from "./pages/DebtsGrid"
+import DebtsGrid from "./pages/DebtsGrid"
 import DebtCard from "./pages/DebtCard"
 
 function App() {
   return (
     <div className="App">
-      <Header/>
-      {/* <DebtsGrid/> */}
-      <DebtCard/>
+      <Routes>
+        <Route path="/" element={ <Header/> }> 
+          <Route index element={ <DebtsGrid/> }/>
+          <Route path="/debtCard" element={ <DebtCard/> }/>
+        </Route>
+      </Routes>
     </div>
   );
 }

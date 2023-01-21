@@ -33,6 +33,10 @@
 
     .header__modules {
         ul {
+            display: flex;
+            flex-direction: column;
+            gap: 1.2rem;
+
             li {
                 cursor: pointer;
 
@@ -44,8 +48,16 @@
                     align-items: center;
                     gap: 1.5rem;
 
-                    &::before {
-                        content: url("../../../public/img/header/debts_module_icon.svg");                        
+                    &--debts-module {
+                        &::before {
+                            content: url("../../../public/img/header/debts_module_icon.svg");                        
+                        }
+                    }
+
+                    &--debt-card {
+                        &::before {
+                            content: url("../../../public/img/header/debt_card_icon.svg");                        
+                        }
                     }
                 }
             }
