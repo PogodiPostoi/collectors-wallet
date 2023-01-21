@@ -2,7 +2,8 @@ import "./debtCardTabs.module.scss";
 // import DebtCardTabClient from "../DebtCardTabClient";
 import DebtCardTabDebt from "../DebtCardTabDebt";
 // import DebtCardTabPhone from "../DebtCardTabPhone";
-import DebtCardTabAddress from "../DebtCardTabAddress";
+// import DebtCardTabAddress from "../DebtCardTabAddress";
+import DebtCardTabEmail from "../DebtCardTabEmail";
 
 const DebtCardTabs = () => {
   return (
@@ -35,7 +36,8 @@ const DebtCardTabs = () => {
             </div>
           </div>
           {/* <DebtCardTabPhone/> */}
-          <DebtCardTabAddress/>
+          {/* <DebtCardTabAddress/> */}
+          <DebtCardTabEmail/>
         </div>
       </div>
     </div>
