@@ -4,6 +4,10 @@
     display: flex;
     flex-direction: row;
     gap: 2rem;
+    
+    .debt-card-tabs__width {
+        width: 50%;
+    }
 
     .debt-card-tabs__flex {
         display: flex;

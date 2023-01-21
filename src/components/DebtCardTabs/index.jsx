@@ -1,10 +1,11 @@
 import "./debtCardTabs.module.scss";
-import DebtCardTabClient from "../DebtCardTabClient";
+// import DebtCardTabClient from "../DebtCardTabClient";
+import DebtCardTabDebt from "../DebtCardTabDebt";
 
 const DebtCardTabs = () => {
   return (
     <div className="debt-card-tabs">
-      <div className="bg-block">
+      <div className="bg-block debt-card-tabs__width">
         <div className="bg-block__container debt-card-tabs__flex">
           <div className="debt-card-tabs__tabs-container">
             <div className="debt-card-tabs__tab-container">
@@ -14,10 +15,11 @@ const DebtCardTabs = () => {
               <p className="debt-card-tabs__tab-title">Договор</p>
             </div>
           </div>
-          <DebtCardTabClient />
+          {/* <DebtCardTabClient /> */}
+          <DebtCardTabDebt />
         </div>
       </div>
-      <div className="bg-block">
+      <div className="bg-block debt-card-tabs__width">
         <div className="bg-block__container debt-card-tabs__flex">
           <div className="debt-card-tabs__tabs-container">
             <div className="debt-card-tabs__tab-container">
