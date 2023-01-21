@@ -9,7 +9,7 @@ const DebtCardTabPhone = () => {
                 <button className="btn btn--delete"></button>
             </div>
             <div className="debt-card-tab-phone__table-container">
-                table
+                table phones
             </div>
         </div>
     )

@@ -1,0 +1,12 @@
+.debt-card-tab-address {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 2rem;
+
+    .debt-card-tab-address__buttons-container {
+        display: flex;
+        flex-direction: column;
+        gap: .7rem;
+    }
+}
