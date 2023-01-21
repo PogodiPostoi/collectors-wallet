@@ -3,7 +3,8 @@ import "./debtCardTabs.module.scss";
 import DebtCardTabDebt from "../DebtCardTabDebt";
 // import DebtCardTabPhone from "../DebtCardTabPhone";
 // import DebtCardTabAddress from "../DebtCardTabAddress";
-import DebtCardTabEmail from "../DebtCardTabEmail";
+// import DebtCardTabEmail from "../DebtCardTabEmail";
+import DebtCardTabPayment from "../DebtCardTabPayment";
 
 const DebtCardTabs = () => {
   return (
@@ -22,7 +23,7 @@ const DebtCardTabs = () => {
           <DebtCardTabDebt />
         </div>
       </div>
-      <div className="bg-block debt-card-tabs__width">
+      {/* <div className="bg-block debt-card-tabs__width">
         <div className="bg-block__container debt-card-tabs__flex">
           <div className="debt-card-tabs__tabs-container">
             <div className="debt-card-tabs__tab-container">
@@ -35,9 +36,19 @@ const DebtCardTabs = () => {
               <p className="debt-card-tabs__tab-title">Адреса</p>
             </div>
           </div>
-          {/* <DebtCardTabPhone/> */}
-          {/* <DebtCardTabAddress/> */}
+          <DebtCardTabPhone/>
+          <DebtCardTabAddress/>
           <DebtCardTabEmail/>
+        </div>
+      </div> */}
+      <div className="bg-block debt-card-tabs__width">
+        <div className="bg-block__container debt-card-tabs__flex">
+          <div className="debt-card-tabs__tabs-container">
+            <div className="debt-card-tabs__tab-container">
+              <p className="debt-card-tabs__tab-title">Платежи</p>
+            </div>
+          </div>
+          <DebtCardTabPayment/>
         </div>
       </div>
     </div>
