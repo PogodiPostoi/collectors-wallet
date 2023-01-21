@@ -13,6 +13,7 @@
 @import './components/DebtCardTabs/debtCardTabs.module.scss';
 @import './components/DebtCardTabClient/debtCardTabClient.module.scss';
 @import './components/DebtCardTabDebt/debtCardTabDebt.module.scss';
+@import './components/DebtCardTabPhone/debtCardTabPhone.module.scss';
 @import './pages/DebtsGrid/debtsGrid.module.scss';
 @import './pages/DebtCard/debtCard.module.scss';
 
@@ -51,6 +52,27 @@ body {
     height: 12px;
 
     background-image: url('../public/img/buttons/close.svg');
+}
+
+.btn--add {
+    width: 24px;
+    height: 24px;
+
+    background-image: url('../public/img/buttons/add.svg');
+}
+
+.btn--edit {
+    width: 24px;
+    height: 24px;
+
+    background-image: url('../public/img/buttons/edit.svg');
+}
+
+.btn--delete {
+    width: 24px;
+    height: 24px;
+
+    background-image: url('../public/img/buttons/delete.svg');
 }
 
 /* bg-block */

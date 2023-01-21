@@ -1,6 +1,7 @@
 import "./debtCardTabs.module.scss";
 // import DebtCardTabClient from "../DebtCardTabClient";
 import DebtCardTabDebt from "../DebtCardTabDebt";
+import DebtCardTabPhone from "../DebtCardTabPhone";
 
 const DebtCardTabs = () => {
   return (
@@ -32,6 +33,7 @@ const DebtCardTabs = () => {
               <p className="debt-card-tabs__tab-title">Адреса</p>
             </div>
           </div>
+          <DebtCardTabPhone/>
         </div>
       </div>
     </div>
