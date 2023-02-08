@@ -6,6 +6,7 @@
 */
 
 @import './utilities/nullstyle.scss';
+@import "reactjs-popup/dist/index.css";
 @import './components/Header/header.module.scss';
 @import './components/Multifilters/multifilters.module.scss';
 @import './components/DebtList/debtList.module.scss';
@@ -17,8 +18,10 @@
 @import './components/DebtCardTabAddress/debtCardTabAddress.module.scss';
 @import './components/DebtCardTabEmail/debtCardTabEmail.module.scss';
 @import './components/DebtCardTabPayment/debtCardTabPayment.module.scss';
+@import './components/Modal/modal.module.scss';
 @import './pages/DebtsGrid/debtsGrid.module.scss';
 @import './pages/DebtCard/debtCard.module.scss';
+
 
 * {
     font-family: 'Roboto', sans-serif;
@@ -33,6 +36,11 @@ body {
 .App {
     display: flex;
     align-items: flex-start;
+}
+
+h3 {
+    font-size: 24px;
+    font-weight: 500;
 }
 
 /* Кнопки */
@@ -50,11 +58,19 @@ body {
     background-image: url('../public/img/buttons/reset.svg');
 }
 
-.btn--close {
+.btn--close-tiny {
     width: 12px;
     height: 12px;
 
     background-image: url('../public/img/buttons/close.svg');
+}
+
+.btn--close-modal {
+    width: 27px;
+    height: 27px;
+
+    background-image: url('../public/img/buttons/close-modal.svg');
+
 }
 
 .btn--add {
@@ -76,6 +92,13 @@ body {
     height: 24px;
 
     background-image: url('../public/img/buttons/delete.svg');
+}
+
+.btn--submit {
+    padding: .725rem 1.1rem;
+
+    color: #fff;
+    background-color: $blue-main;
 }
 
 /* bg-block */

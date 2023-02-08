@@ -1,12 +1,16 @@
+import React from 'react';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 
 import "./debtCardTabs.module.scss";
+
+import Modal from "../Modal";
 import DebtCardTabClient from "../DebtCardTabClient";
 import DebtCardTabDebt from "../DebtCardTabDebt";
 import DebtCardTabPhone from "../DebtCardTabPhone";
 import DebtCardTabAddress from "../DebtCardTabAddress";
 import DebtCardTabEmail from "../DebtCardTabEmail";
 import DebtCardTabPayment from "../DebtCardTabPayment";
+
 
 const DebtCardTabs = () => {
   return (
@@ -40,7 +44,9 @@ const DebtCardTabs = () => {
             </TabList>
 
             <TabPanel>
-              <DebtCardTabPhone/>
+              <DebtCardTabPhone
+                Modal = {Modal}
+              />
             </TabPanel>
             <TabPanel>
               <DebtCardTabAddress/>
@@ -56,50 +62,6 @@ const DebtCardTabs = () => {
       </div>
       
 
-      {/* <div className="debt-card-tabs">
-        <div className="bg-block debt-card-tabs__width">
-          <div className="bg-block__container debt-card-tabs__flex">
-            <div className="debt-card-tabs__tabs-container">
-              <div className="debt-card-tabs__tab-container">
-                <p className="debt-card-tabs__tab-title">Клиент</p>
-              </div>
-              <div className="debt-card-tabs__tab-container">
-                <p className="debt-card-tabs__tab-title">Договор</p>
-              </div>
-            </div>
-            <DebtCardTabClient />
-            <DebtCardTabDebt />
-          </div>
-        </div> */}
-        {/* <div className="bg-block debt-card-tabs__width">
-          <div className="bg-block__container debt-card-tabs__flex">
-            <div className="debt-card-tabs__tabs-container">
-              <div className="debt-card-tabs__tab-container">
-                <p className="debt-card-tabs__tab-title">Телефоны</p>
-              </div>
-              <div className="debt-card-tabs__tab-container">
-                <p className="debt-card-tabs__tab-title">Email</p>
-              </div>
-              <div className="debt-card-tabs__tab-container">
-                <p className="debt-card-tabs__tab-title">Адреса</p>
-              </div>
-            </div>
-            <DebtCardTabPhone/>
-            <DebtCardTabAddress/>
-            <DebtCardTabEmail/>
-          </div>
-        </div> */}
-        {/* <div className="bg-block debt-card-tabs__width">
-          <div className="bg-block__container debt-card-tabs__flex">
-            <div className="debt-card-tabs__tabs-container">
-              <div className="debt-card-tabs__tab-container">
-                <p className="debt-card-tabs__tab-title">Платежи</p>
-              </div>
-            </div>
-            <DebtCardTabPayment/>
-          </div>
-        </div>
-      </div> */}
       
     </div>
 

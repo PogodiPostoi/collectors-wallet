@@ -9,7 +9,7 @@ const DebtCardHeader = () => {
                         <p className="debt-card-header__other-debt-title">
                             Иванов Иван Иванович - 1111111,00 руб.
                         </p>
-                        <button className="btn btn--close"></button>
+                        <button className="btn btn--close-tiny"></button>
                     </div>
                 </div>
                 <div className="debt-card-header__debt-info">
