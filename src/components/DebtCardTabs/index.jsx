@@ -49,13 +49,19 @@ const DebtCardTabs = () => {
               />
             </TabPanel>
             <TabPanel>
-              <DebtCardTabAddress/>
+              <DebtCardTabAddress
+                Modal = {Modal}
+              />
             </TabPanel>
             <TabPanel>
-              <DebtCardTabEmail/>
+              <DebtCardTabEmail
+                Modal = {Modal}
+              />
             </TabPanel>
             <TabPanel>
-              <DebtCardTabPayment/>
+              <DebtCardTabPayment
+                Modal = {Modal}
+              />
             </TabPanel>
           </Tabs>
         </div>

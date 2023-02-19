@@ -6,10 +6,15 @@ const DebtCardTabPhone = ({Modal}) => {
   return (
     <div className="debt-card-tab-phone">
       <div className="debt-card-tab-phone__buttons-container">
-        {/* <button className="btn btn--add"></button> */}
-        <Modal/>
-        <button className="btn btn--edit"></button>
-        <button className="btn btn--delete"></button>
+        <Modal
+          className = "btn btn--add"
+          type = "phoneAdd"
+        />
+        <Modal
+          className = "btn btn--edit"
+          type = "phoneEdit"
+        />
+        <button className="btn btn--delete" onClick={()=> alert("Пока не могу удалить((")}></button>
       </div>
       <div className="debt-card-tab-phone__table-container">table phones</div>
     </div>

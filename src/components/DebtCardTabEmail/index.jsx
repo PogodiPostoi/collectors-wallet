@@ -1,12 +1,18 @@
 import "./debtCardTabEmail.module.scss";
 
-const DebtCardTabEmail = () => {
+const DebtCardTabEmail = ({Modal}) => {
     return (
         <div className="debt-card-tab-email">
             <div className="debt-card-tab-email__buttons-container">
-                <button className="btn btn--add"></button>
-                <button className="btn btn--edit"></button>
-                <button className="btn btn--delete"></button>
+            <Modal
+                className = "btn btn--add"
+                type = "emailAdd"
+            />
+            <Modal
+                className = "btn btn--edit"
+                type = "emailEdit"
+            />
+                <button className="btn btn--delete" onClick={()=> alert("Пока не могу удалить((")}></button>
             </div>
             <div className="debt-card-tab-email__table-container">
                 table emails

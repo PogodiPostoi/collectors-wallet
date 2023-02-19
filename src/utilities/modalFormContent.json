@@ -1,0 +1,210 @@
+[
+    {
+        "type": "phoneAdd",
+        "method": "POST",
+        "title": "Добавление телефона",
+        "fields": 
+        [
+            {
+                "label": "Номер телефона",
+                "htmlFor": "phoneNumber",
+                "inputType": "tel",
+                "id": "phoneNumber"
+            },
+            {
+                "label": "Тип телефона",
+                "htmlFor": "phoneType",
+                "inputType": "text",
+                "id": "phoneType"
+            },
+            {
+                "label": "Статус",
+                "htmlFor": "status",
+                "inputType": "text",
+                "id": "status"
+            }
+        ]
+    },
+    {
+        "type": "phoneEdit",
+        "method": "PUT",
+        "title": "Редактирование телефона",
+        "fields": 
+        [
+            {
+                "label": "Номер телефона",
+                "htmlFor": "phoneNumber",
+                "inputType": "tel",
+                "id": "phoneNumber"
+            },
+            {
+                "label": "Тип телефона",
+                "htmlFor": "phoneType",
+                "inputType": "text",
+                "id": "phoneType"
+            },
+            {
+                "label": "Статус",
+                "htmlFor": "status",
+                "inputType": "text",
+                "id": "status"
+            }
+        ]
+    },
+    {
+        "type": "emailAdd",
+        "method": "POST",
+        "title": "Добавление email",
+        "fields": 
+        [
+            {
+                "label": "Email",
+                "htmlFor": "email",
+                "inputType": "text",
+                "id": "email"
+            },
+            {
+                "label": "Тип email",
+                "htmlFor": "emailType",
+                "inputType": "text",
+                "id": "emailType"
+            },
+            {
+                "label": "Статус",
+                "htmlFor": "status",
+                "inputType": "text",
+                "id": "status"
+            }
+        ]
+    },
+    {
+        "type": "emailEdit",
+        "method": "PUT",
+        "title": "Редактирование email",
+        "fields": 
+        [
+            {
+                "label": "Email",
+                "htmlFor": "email",
+                "inputType": "text",
+                "id": "email"
+            },
+            {
+                "label": "Тип email",
+                "htmlFor": "emailType",
+                "inputType": "text",
+                "id": "emailType"
+            },
+            {
+                "label": "Статус",
+                "htmlFor": "status",
+                "inputType": "text",
+                "id": "status"
+            }
+        ]
+    },
+    {
+        "type": "addressAdd",
+        "method": "POST",
+        "title": "Добавление адреса",
+        "fields": 
+        [
+            {
+                "label": "Адрес",
+                "htmlFor": "address",
+                "inputType": "text",
+                "id": "address"
+            },
+            {
+                "label": "Тип адреса",
+                "htmlFor": "addressType",
+                "inputType": "text",
+                "id": "addressType"
+            },
+            {
+                "label": "Статус",
+                "htmlFor": "status",
+                "inputType": "text",
+                "id": "status"
+            }
+        ]
+    },
+    {
+        "type": "addressEdit",
+        "method": "PUT",
+        "title": "Редактирование адреса",
+        "fields": 
+        [
+            {
+                "label": "Адрес",
+                "htmlFor": "address",
+                "inputType": "text",
+                "id": "address"
+            },
+            {
+                "label": "Тип адреса",
+                "htmlFor": "addressType",
+                "inputType": "text",
+                "id": "addressType"
+            },
+            {
+                "label": "Статус",
+                "htmlFor": "status",
+                "inputType": "text",
+                "id": "status"
+            }
+        ]
+    },
+    {
+        "type": "paymentAdd",
+        "method": "POST",
+        "title": "Добавление платежа",
+        "fields": 
+        [
+            {
+                "label": "Сумма платежа",
+                "htmlFor": "payment",
+                "inputType": "number",
+                "id": "payment"
+            },
+            {
+                "label": "Дата платежа",
+                "htmlFor": "paymentDate",
+                "inputType": "date",
+                "id": "paymentDate"
+            },
+            {
+                "label": "Статус",
+                "htmlFor": "status",
+                "inputType": "text",
+                "id": "status"
+            }
+        ]
+    },
+    {
+        "type": "paymentEdit",
+        "method": "PUT",
+        "title": "Редактирование платежа",
+        "fields": 
+        [
+            {
+                "label": "Сумма платежа",
+                "htmlFor": "payment",
+                "inputType": "number",
+                "id": "payment"
+            },
+            {
+                "label": "Дата платежа",
+                "htmlFor": "paymentDate",
+                "inputType": "date",
+                "id": "paymentDate"
+            },
+            {
+                "label": "Статус",
+                "htmlFor": "status",
+                "inputType": "text",
+                "id": "status"
+            }
+        ]
+    }
+]
