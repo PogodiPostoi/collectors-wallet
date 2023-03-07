@@ -1,5 +1,7 @@
 import './debtList.module.scss';
 
+import DataTable from '../MuiTable/muiTable';
+
 
 
 const DebtList = () => {
@@ -11,6 +13,8 @@ const DebtList = () => {
             </div>
             <div className="bg-block__container">
                 <p>table</p>
+
+                <DataTable/>
                 
             </div>
         </div>
