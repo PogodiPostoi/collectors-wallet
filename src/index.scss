@@ -101,6 +101,14 @@ h3 {
     background-color: $blue-main;
 }
 
+.btn--download {
+    height: 3rem;
+    padding: .725rem 1.1rem;
+    
+    background-color: #fff;
+    border: solid 1px $label-text;
+}
+
 /* bg-block */
 
 .bg-block {
@@ -164,4 +172,13 @@ h3 {
 
 .fd-column {
     flex-direction: column;
+}
+
+.tip {
+    margin: 1rem;
+    color: $label-text;
+
+    &--table {
+        margin-bottom: 2rem;
+    }
 }

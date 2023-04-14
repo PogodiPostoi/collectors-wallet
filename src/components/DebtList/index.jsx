@@ -1,6 +1,6 @@
 import './debtList.module.scss';
 
-import DataTable from '../MuiTable/muiTable';
+import DataTable from '../DataTable';
 
 
 
@@ -12,7 +12,7 @@ const DebtList = () => {
                 Список долгов
             </div>
             <div className="bg-block__container">
-                <p>table</p>
+                <p className="tip tip--table">&#9432; <b>Подсказка:</b> При двойном нажатии на запись - открывается карточка должника</p>
 
                 <DataTable/>
                 
