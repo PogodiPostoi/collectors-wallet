@@ -10,31 +10,31 @@ const DebtCardTabClient = () => {
                 </div>
                 <div className="fields__field-container" style={{width: 120}}>
                     <label className="fields__label" htmlFor="birthDt">Дата рождения</label>
-                    <input className="fields__input" type="text" id="birthDt" name="birthDt"/>
+                    <input className="fields__input" type="text" id="birthDt" name="birthDt" disabled/>
                 </div>
                 <div className="fields__field-container" style={{width: 80}}>
                     <label className="fields__label" htmlFor="age">Возраст</label>
-                    <input className="fields__input" type="text" id="age" name="age"/>
+                    <input className="fields__input" type="text" id="age" name="age" disabled/>
                 </div>
                 <div className="fields__field-container" style={{width: 100}}>
                     <label className="fields__label" htmlFor="gender">Пол</label>
-                    <input className="fields__input" type="text" id="gender" name="gender"/>
+                    <input className="fields__input" type="text" id="gender" name="gender" disabled/>
                 </div>
                 <div className="fields__field-container" style={{width: 150}}>
                     <label className="fields__label" htmlFor="identityDoc">Документ удост. личн.</label>
-                    <input className="fields__input" type="text" id="identityDoc" name="identityDoc"/>
+                    <input className="fields__input" type="text" id="identityDoc" name="identityDoc" disabled/>
                 </div>
                 <div className="fields__field-container" style={{width: 210}}>
                     <label className="fields__label" htmlFor="identityDocNumber">Серия и номер документа уд. личн.</label>
-                    <input className="fields__input" type="text" id="identityDocNumber" name="identityDocNumber"/>
+                    <input className="fields__input" type="text" id="identityDocNumber" name="identityDocNumber" disabled/>
                 </div>
                 <div className="fields__field-container" style={{width: 250}}>
                     <label className="fields__label" htmlFor="birthPlace">Место рождения</label>
-                    <input className="fields__input" type="text" id="birthPlace" name="birthPlace"/>
+                    <input className="fields__input" type="text" id="birthPlace" name="birthPlace" disabled/>
                 </div>
                 <div className="fields__field-container" style={{width: 150}}>
                     <label className="fields__label" htmlFor="INN">ИНН</label>
-                    <input className="fields__input" type="text" id="INN" name="INN"/>
+                    <input className="fields__input" type="text" id="INN" name="INN" disabled/>
                 </div>
             </div>
         </div>

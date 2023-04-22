@@ -1,5 +1,5 @@
 import { put, call, takeEvery } from 'redux-saga/effects'
-import { FETCH_DEBTORS, setDebtorsAction, fetchDebtorsAction } from './debtorsReducer'
+import { FETCH_DEBTORS, setDebtorsAction } from './debtorsReducer'
 
 const fetchDebtorsListFromApi = () => {
     return fetch('https://642fe3bec26d69edc885f1d9.mockapi.io/debtorslist')
