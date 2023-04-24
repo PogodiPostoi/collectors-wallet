@@ -1,6 +1,9 @@
 import './debtCard.module.scss';
 import DebtCardHeader from '../../components/DebtCardHeader';
 import DebtCardTabs from '../../components/DebtCardTabs';
+import { useDispatch, useSelector } from 'react-redux';
+import { fetchDebtCardAction } from '../../saga/debtCardReducer';
+import { useEffect } from 'react';
 
 // valid data 
 // [
@@ -122,13 +125,39 @@ import DebtCardTabs from '../../components/DebtCardTabs';
 //   ] 
 
 const DebtCard = () => {
+    const dispatch = useDispatch();
 
+    useEffect(() => {
+            dispatch(fetchDebtCardAction());
+    }, []); 
+    
+    const debtCard = useSelector((state) => state.debtCard.debtCard);
+    const data = debtCard.find(obj => obj.personId === 1)
+
+    console.log({data}) //! Удалить после отладки
+
+    const personData = data ? data : {}
+    const debtData = data && data.debt ? data.debt : {}
+    const addressesData = data && data.addresses ? data.addresses : {}
+    const phonesData = data && data.phones ? data.phones : {}
+    const emailsData = data && data.emails ? data.emails : {}
+    const paymentsData = data && data.payments ? data.payments : {}
+    
     return (
+        
         <div className="debt-card">
             <DebtCardHeader
-                // data={1} 
+                personData={personData}
+                debtData={debtData}
             />
-            <DebtCardTabs/>
+            <DebtCardTabs
+                personData={personData}
+                debtData={debtData}
+                addressesData={addressesData}
+                phonesData={phonesData}
+                emailsData={emailsData}
+                paymentsData={paymentsData}
+            />
         </div>
     )
 }

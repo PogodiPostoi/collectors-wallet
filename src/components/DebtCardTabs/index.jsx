@@ -12,7 +12,7 @@ import DebtCardTabEmail from "../DebtCardTabEmail";
 import DebtCardTabPayment from "../DebtCardTabPayment";
 
 
-const DebtCardTabs = () => {
+const DebtCardTabs = ({personData, debtData, addressesData, phonesData, emailsData, paymentsData}) => {
   return (
     <div className="debt-card-tabs">
       <div className="bg-block debt-card-tabs__width" >
@@ -24,10 +24,14 @@ const DebtCardTabs = () => {
             </TabList>
 
             <TabPanel>
-              <DebtCardTabClient />
+              <DebtCardTabClient 
+                personData={personData}
+              />
             </TabPanel>
             <TabPanel>
-              <DebtCardTabDebt />
+              <DebtCardTabDebt
+                debtData={debtData}
+              />
             </TabPanel>
           </Tabs>
         </div>
@@ -45,21 +49,25 @@ const DebtCardTabs = () => {
 
             <TabPanel>
               <DebtCardTabPhone
+                phonesData={phonesData}
                 Modal = {Modal}
               />
             </TabPanel>
             <TabPanel>
               <DebtCardTabAddress
+                addressesData={addressesData}
                 Modal = {Modal}
               />
             </TabPanel>
             <TabPanel>
               <DebtCardTabEmail
+                emailsData={emailsData}
                 Modal = {Modal}
               />
             </TabPanel>
             <TabPanel>
               <DebtCardTabPayment
+                paymentsData={paymentsData}
                 Modal = {Modal}
               />
             </TabPanel>
