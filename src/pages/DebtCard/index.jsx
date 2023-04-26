@@ -134,8 +134,6 @@ const DebtCard = () => {
     const debtCard = useSelector((state) => state.debtCard.debtCard);
     const data = debtCard.find(obj => obj.personId === 1)
 
-    console.log({data}) //! Удалить после отладки
-
     const personData = data ? data : {}
     const debtData = data && data.debt ? data.debt : {}
     const addressesData = data && data.addresses ? data.addresses : {}

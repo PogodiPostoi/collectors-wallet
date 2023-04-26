@@ -1,6 +1,7 @@
+import DataTable from "../DataTable";
 import "./debtCardTabPayment.module.scss";
 
-const DebtCardTabPayment = ({Modal}) => {
+const DebtCardTabPayment = ({Modal, paymentsData}) => {
     return (
         <div className="debt-card-tab-payment">
             <div className="debt-card-tab-payment__buttons-container">
@@ -15,7 +16,10 @@ const DebtCardTabPayment = ({Modal}) => {
                 <button className="btn btn--delete" onClick={()=> alert("Пока не могу удалить((")}></button>
             </div>
             <div className="debt-card-tab-payment__table-container">
-                table payments
+            <DataTable
+                data = {paymentsData}
+                tableType = {"payments"}
+            />
             </div>
         </div>
     )

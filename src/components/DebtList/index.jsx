@@ -2,8 +2,6 @@ import './debtList.module.scss';
 
 import DataTable from '../DataTable';
 
-
-
 const DebtList = () => {
   
     return (

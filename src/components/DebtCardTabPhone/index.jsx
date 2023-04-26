@@ -1,8 +1,9 @@
 import React from "react";
 
 import "./debtCardTabPhone.module.scss";
+import DataTable from "../DataTable";
 
-const DebtCardTabPhone = ({Modal}) => {
+const DebtCardTabPhone = ({Modal, phonesData}) => {
   return (
     <div className="debt-card-tab-phone">
       <div className="debt-card-tab-phone__buttons-container">
@@ -16,7 +17,10 @@ const DebtCardTabPhone = ({Modal}) => {
         />
         <button className="btn btn--delete" onClick={()=> alert("Пока не могу удалить((")}></button>
       </div>
-      <div className="debt-card-tab-phone__table-container">table phones</div>
+      <DataTable
+        data = {phonesData}
+        tableType = {"phones"}
+      />
     </div>
   );
 };
