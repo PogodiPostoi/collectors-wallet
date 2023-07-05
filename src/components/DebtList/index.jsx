@@ -10,7 +10,7 @@ const DebtList = () => {
                 Список долгов
             </div>
             <div className="bg-block__container">
-                <p className="tip tip--table">&#9432; <b>Подсказка:</b> При двойном нажатии на запись - открывается карточка должника</p>
+                <p className="tip tip--table">&#9432; <b>Подсказка:</b> При нажатии на кнопку в записи - открывается карточка должника</p>
 
                 <DataTable/>
                 

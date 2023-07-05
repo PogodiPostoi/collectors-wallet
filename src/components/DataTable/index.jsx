@@ -2,9 +2,24 @@ import * as React from "react";
 import { DataGrid } from "@mui/x-data-grid";
 import { useSelector, useDispatch } from "react-redux";
 import { FETCH_DEBTORS } from "../../saga/debtorsReducer";
+import { setDebtCardListAction } from "../../saga/debtCardListReducer";
+import { useNavigate } from "react-router-dom";
 
 export default function DataTable({ data, tableType }) {
   const dispatch = useDispatch();
+  const navigate = useNavigate();
+
+  const setDebtCardList = (id) => {
+    const debtCardList = {
+      id,
+    };
+    dispatch(setDebtCardListAction(debtCardList));
+  };
+
+  const renderDebtCardButton = (params) => {
+    return <button className="btn btn--debt-card" onClick={() => {setDebtCardList(params.row.id)
+      navigate('/debtCard')}}></button>;
+  };
 
   // Колоночки устанавливаем
   let columns = [];
@@ -26,22 +41,22 @@ export default function DataTable({ data, tableType }) {
         { field: "status", headerName: "Статус ", width: 120 },
       ];
       break;
-      case "emails":
-        columns = [
-          { field: "id", headerName: "ID", width: 60 },
-          { field: "email", headerName: "Email", width: 230 },
-          { field: "type", headerName: "Тип", width: 130 },
-          { field: "status", headerName: "Статус ", width: 120 },
-        ];
-        break;
-        case "payments":
-        columns = [
-          { field: "id", headerName: "ID", width: 60 },
-          { field: "paymentSum", headerName: "Сумма платежа, руб", width: 210 },
-          { field: "paymentDt", headerName: "Дата платежа", width: 130},
-          { field: "approved", headerName: "Подтвержден", width: 140 },
-        ];
-        break;
+    case "emails":
+      columns = [
+        { field: "id", headerName: "ID", width: 60 },
+        { field: "email", headerName: "Email", width: 230 },
+        { field: "type", headerName: "Тип", width: 130 },
+        { field: "status", headerName: "Статус ", width: 120 },
+      ];
+      break;
+    case "payments":
+      columns = [
+        { field: "id", headerName: "ID", width: 60 },
+        { field: "paymentSum", headerName: "Сумма платежа, руб", width: 210 },
+        { field: "paymentDt", headerName: "Дата платежа", width: 130 },
+        { field: "approved", headerName: "Подтвержден", width: 140 },
+      ];
+      break;
 
     default:
       columns = [
@@ -56,14 +71,21 @@ export default function DataTable({ data, tableType }) {
           sortable: false,
           width: 200,
         },
+        {
+          field: "debtCard",
+          headerName: "В карточку",
+          width: 100,
+          renderCell: renderDebtCardButton,
+          align: "center"
+        },
       ];
       break;
   }
 
-  // Дату подтягиваем и расставляем
+  // Данные подтягиваем и расставляем
   const debtorsList = useSelector((state) => state.debtors.debtors);
 
-  const rows = Object.values(tableType ? data : debtorsList)
+  const rows = Object.values(tableType ? data : debtorsList);
 
   return (
     <div
@@ -79,8 +101,8 @@ export default function DataTable({ data, tableType }) {
         1 условие для грида списка долгов
         2 условие для грида внутри карточки долга
       */}
-      {( tableType === null || tableType === undefined || tableType === '' ) ? (
-        (rows.length > 0) ? (
+      {tableType === null || tableType === undefined || tableType === "" ? (
+        rows.length > 0 ? (
           <DataGrid
             rows={rows}
             columns={columns}

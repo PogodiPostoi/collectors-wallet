@@ -63,6 +63,8 @@ h3 {
     height: 12px;
 
     background-image: url('../public/img/buttons/close.svg');
+
+    cursor: pointer;
 }
 
 .btn--close-modal {
@@ -107,6 +109,13 @@ h3 {
     
     background-color: #fff;
     border: solid 1px $label-text;
+}
+
+.btn--debt-card {
+    width: 24px;
+    height: 24px;
+
+    background-image: url('../public/img/buttons/debt-card.svg');
 }
 
 /* bg-block */
