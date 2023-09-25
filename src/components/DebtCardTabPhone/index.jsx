@@ -15,7 +15,7 @@ const DebtCardTabPhone = ({Modal, phonesData}) => {
           className = "btn btn--edit"
           type = "phoneEdit"
         />
-        <button className="btn btn--delete" onClick={()=> alert("Пока не могу удалить((")}></button>
+        <button className="btn btn--delete" onClick={()=> alert("Извините, действие ещё в разработке")}></button>
       </div>
       <DataTable
         data = {phonesData}
