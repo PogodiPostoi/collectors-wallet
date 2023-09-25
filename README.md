@@ -1,4 +1,4 @@
-Web-link: not ready yet :'(
+Web-link: https://pogodipostoi.github.io/collectors-wallet/
 
     С какими проблемами столкнулся в процессе:
         * Redux: Необходимость отдельно создавать action'ы под каждое действие. Отдельный action на fetch данных, отдельный на сохранение этих данных в состояние.
