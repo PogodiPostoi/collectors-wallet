@@ -10,7 +10,7 @@ const Header = () => {
     <>
       <header className="header">
         <div className="header__profile">
-          <img src="/img/header/user_icon.svg" alt="profile icon" />
+          <img src="./img/header/user_icon.svg" alt="profile icon" />
           <span className="header__username">Погодин Артем</span>
         </div>
         <div className="header__modules">

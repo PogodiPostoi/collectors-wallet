@@ -108,6 +108,7 @@ export default function DataTable({ data, tableType }) {
             columns={columns}
             pageSize={5}
             rowsPerPageOptions={[5]}
+            
           />
         ) : (
           <button
