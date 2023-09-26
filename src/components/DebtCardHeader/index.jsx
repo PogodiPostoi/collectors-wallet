@@ -1,7 +1,6 @@
 import { Link } from 'react-router-dom';
 import { resetDebtCard } from '../../saga/debtCardReducer';
 import './debtCardHeader.module.scss';
-import { useSelector } from 'react-redux';
 
 const DebtCardHeader = ({personData, debtData, debtCard, debtCardList}) => {
 
