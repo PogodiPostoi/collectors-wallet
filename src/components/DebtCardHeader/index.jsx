@@ -7,7 +7,7 @@ const DebtCardHeader = ({personData, debtData, debtCard, debtCardList}) => {
 
     const debtsList = `${personData.FIO} - ${debtData.debtAmount} руб.` 
 
-    const sth = useSelector((state) => state.debtCard.debtCard)
+    // const sth = useSelector((state) => state.debtCard.debtCard)
 
     return (
       <div className="bg-block">
