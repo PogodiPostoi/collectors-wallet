@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/collectors-wallet/static/css/main.6ab39555.css",
-    "main.js": "/collectors-wallet/static/js/main.96e08e4f.js",
+    "main.css": "/collectors-wallet/static/css/main.caf0a727.css",
+    "main.js": "/collectors-wallet/static/js/main.308670ec.js",
     "static/media/edit.svg": "/collectors-wallet/static/media/edit.3062cc50f6033ff0b550.svg",
     "static/media/delete.svg": "/collectors-wallet/static/media/delete.5035d9f8a0ec64e924fe.svg",
     "index.html": "/collectors-wallet/index.html",
@@ -12,11 +12,11 @@
     "static/media/debts_module_icon.svg": "/collectors-wallet/static/media/debts_module_icon.619386a34b0190ecbab6.svg",
     "static/media/close-modal.svg": "/collectors-wallet/static/media/close-modal.2b495936e29732cbccc9.svg",
     "static/media/add.svg": "/collectors-wallet/static/media/add.6b7aaa773d17b2a153c5.svg",
-    "main.6ab39555.css.map": "/collectors-wallet/static/css/main.6ab39555.css.map",
-    "main.96e08e4f.js.map": "/collectors-wallet/static/js/main.96e08e4f.js.map"
+    "main.caf0a727.css.map": "/collectors-wallet/static/css/main.caf0a727.css.map",
+    "main.308670ec.js.map": "/collectors-wallet/static/js/main.308670ec.js.map"
   },
   "entrypoints": [
-    "static/css/main.6ab39555.css",
-    "static/js/main.96e08e4f.js"
+    "static/css/main.caf0a727.css",
+    "static/js/main.308670ec.js"
   ]
 }
