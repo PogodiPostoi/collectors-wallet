@@ -9,12 +9,8 @@ import { redirect } from 'react-router-dom';
 
 
 
-const DebtCard = () => {
+const DebtCard = ({ debtCard, debtCardList, data }) => {
     const dispatch = useDispatch();
-
-    const debtCard = useSelector((state) => state.debtCard.debtCard);
-    const debtCardList = useSelector((state) => state.debtCardList.debtCardList);
-    const data = debtCard.find(obj => obj.personId === Number(debtCardList.id))
 
     useEffect(() => {
             dispatch(fetchDebtCardAction());

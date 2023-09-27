@@ -1,4 +1,5 @@
-import DataTable from "../DataTable";
+import AlfaTable from "../AlfaTable";
+// import DataTable from "../DataTable";
 import "./debtCardTabAddress.module.scss";
 
 const DebtCardTabAddress = ({Modal, addressesData}) => {
@@ -16,7 +17,7 @@ const DebtCardTabAddress = ({Modal, addressesData}) => {
                 <button className="btn btn--delete" onClick={()=> alert("Пока не могу удалить((")}></button>
             </div>
             <div className="debt-card-tab-address__table-container">
-            <DataTable
+            <AlfaTable
                 data = {addressesData}
                 tableType = {"addresses"}
             />

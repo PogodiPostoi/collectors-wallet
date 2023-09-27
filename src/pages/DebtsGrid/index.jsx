@@ -2,6 +2,7 @@ import './debtsGrid.module.scss';
 
 // import Multifilters from '../../components/Multifilters'
 import DebtList from '../../components/DebtList'
+import AlfaTable from '../../components/AlfaTable';
 
 const DebtsGrid = () => {
     return (
@@ -11,7 +12,8 @@ const DebtsGrid = () => {
                 <span className="debts-grid__datetime">26 ноября 2022</span>
             </div>
             {/* <Multifilters/> */}
-            <DebtList/>
+            {/* <DebtList/> */}
+            <AlfaTable/>
         </div>
     )
 }

@@ -4,9 +4,15 @@
     align-items: flex-start;
     gap: 2rem;
 
-    .debt-card-tab-email__buttons-container {
+    &__buttons-container {
+        margin-top: 15px;
+
         display: flex;
         flex-direction: column;
         gap: .7rem;
+    }
+
+    &__table-container {
+        width: 100%;
     }
 }
